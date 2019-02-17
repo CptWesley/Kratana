@@ -12,7 +12,7 @@
     "noUnusedParameters": true,
     "paths": {
       "@/*": [
-        "src/frontend/*"
+        "src/*"
       ]
     },
     "sourceMap": true,

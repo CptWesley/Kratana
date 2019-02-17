@@ -15,7 +15,6 @@ const getArgument = (arg) => {
 const isProduction = getArgument('mode') == 'production';
 
 const cssLoaderConfig = {
-    minimize: true,
     modules: true,
     camelCase: 'only',
     localIdentName: isProduction ? '[hash:base64:10]' : '[name]--[local]--[hash:base64:5]',
@@ -56,7 +55,7 @@ module.exports = {
             '.jsx',
         ],
         alias: {
-            "@": path.resolve(__dirname, 'src/frontend'),
+            "@": path.resolve(__dirname, 'src'),
         },
     },
 
