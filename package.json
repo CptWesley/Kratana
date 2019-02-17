@@ -1,0 +1,39 @@
+{
+  "name": "kratana",
+  "version": "0.1.0",
+  "description": "GameBoy emulator in the browser.",
+  "main": "index.js",
+  "repository": "https://github.com/CptWesley/Kratana.git",
+  "author": "Kratana Contributors",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "npm-run-all -s clean build-frontend",
+    "build:prod": "npm-run-all -s clean build-frontend:prod",
+    "clean": "del-cli dist/**/* dist/**/.*",
+    "build-frontend": "webpack --mode=development",
+    "build-frontend:prod": "webpack --mode=production",
+    "dev": "webpack-dev-server --mode=development"
+  },
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.4",
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "css-loader": "^2.1.0",
+    "del-cli": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
