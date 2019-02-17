@@ -1,0 +1,10 @@
+{
+  "name": "kratana",
+  "version": "0.1",
+  "description": "GameBoy emulator in the browser.",
+  "main": "index.js",
+  "repository": "https://github.com/CptWesley/Kratana.git",
+  "author": "Kratana Contributors",
+  "license": "MIT",
+  "private": false
+}
