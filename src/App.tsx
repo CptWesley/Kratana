@@ -1,5 +1,6 @@
 import * as React from 'react';
 import render, { setCanvas } from '@/engine/renderer';
+import StatefulComponent from './components/State';
 
 const css = require('./App.scss');
 
@@ -16,6 +17,7 @@ export default class App extends React.Component {
             />
             <br />
             <button onClick={render}>Render screen</button>
+            <StatefulComponent />
         </>
     }
 }
